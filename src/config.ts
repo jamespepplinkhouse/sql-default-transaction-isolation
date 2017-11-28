@@ -1,7 +1,5 @@
 import * as Sequelize from 'sequelize'
 
-const isolationLevel = Sequelize.Transaction.ISOLATION_LEVELS.READ_COMMITTED
-
 const postgres = {
   database: 'test',
   username: 'test',
@@ -10,8 +8,7 @@ const postgres = {
     dialect: 'postgres',
     host: 'localhost',
     port: 5555,
-    logging: false,
-    isolationLevel
+    logging: true
   }
 }
 
@@ -23,8 +20,7 @@ const mysql = {
     dialect: 'mysql',
     host: 'localhost',
     port: 5556,
-    logging: false,
-    isolationLevel
+    logging: true
   }
 }
 
