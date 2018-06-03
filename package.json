@@ -7,14 +7,13 @@
   },
   "devDependencies": {
     "@types/sequelize": "^4.0.79",
-    "prettier": "^1.8.2",
-    "ts-node": "^3.3.0",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
+    "prettier": "^1.13.4",
+    "ts-node": "^6.0.5",
+    "typescript": "^2.9.1"
   },
   "dependencies": {
-    "mysql2": "^1.5.1",
-    "pg": "^7.4.0",
-    "sequelize": "^4.22.8"
+    "mysql2": "^1.5.3",
+    "pg": "^7.4.3",
+    "sequelize": "^4.37.10"
   }
 }

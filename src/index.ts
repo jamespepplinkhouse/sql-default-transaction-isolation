@@ -9,7 +9,7 @@ const testRun = async (name: string, sequelizeConfig) => {
 
   console.time(`${name} result`)
 
-  const executions = 1000
+  const executions = 100
   const queries = getTestQueries(sequelize, models)
   await evilQueryExecutor(executions, queries)
 
@@ -17,8 +17,8 @@ const testRun = async (name: string, sequelizeConfig) => {
 }
 ;(async () => {
   try {
-    // await testRun('postgres', config.postgres)
-    await testRun('mysql', config.mysql)
+    await testRun('postgres', config.postgres)
+    // await testRun('mysql', config.mysql)
   } catch (error) {
     console.error(error)
   }
